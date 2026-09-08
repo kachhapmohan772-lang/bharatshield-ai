@@ -1,0 +1,242 @@
+[
+  {
+    "text": "Your account will be blocked today. Share OTP immediately to keep it active.",
+    "label": "scam",
+    "categoryId": "otp_credential_theft",
+    "category": "OTP / Credential Theft"
+  },
+  {
+    "text": "Bank verification pending. Tell us the OTP now or your debit card will be disabled.",
+    "label": "scam",
+    "categoryId": "otp_credential_theft",
+    "category": "OTP / Credential Theft"
+  },
+  {
+    "text": "Send your UPI PIN to receive the refund amount in your account.",
+    "label": "scam",
+    "categoryId": "otp_credential_theft",
+    "category": "OTP / Credential Theft"
+  },
+  {
+    "text": "Provide your password and OTP for urgent account verification.",
+    "label": "scam",
+    "categoryId": "otp_credential_theft",
+    "category": "OTP / Credential Theft"
+  },
+  {
+    "text": "Aapka account block ho jayega. OTP bhejo aur KYC complete karo.",
+    "label": "scam",
+    "categoryId": "otp_credential_theft",
+    "category": "OTP / Credential Theft"
+  },
+  {
+    "text": "Dear customer, your KYC has expired. Click this link to update or account will be suspended.",
+    "label": "scam",
+    "categoryId": "fake_kyc",
+    "category": "Fake KYC / Account Suspension"
+  },
+  {
+    "text": "Final notice: update bank KYC within 2 hours to avoid account deactivation.",
+    "label": "scam",
+    "categoryId": "fake_kyc",
+    "category": "Fake KYC / Account Suspension"
+  },
+  {
+    "text": "RBI KYC alert. Submit Aadhaar and PAN details on the attached link immediately.",
+    "label": "scam",
+    "categoryId": "fake_kyc",
+    "category": "Fake KYC / Account Suspension"
+  },
+  {
+    "text": "Your wallet KYC failed. Login through http://paytm-secure.example.top to reactivate.",
+    "label": "scam",
+    "categoryId": "phishing",
+    "category": "Phishing"
+  },
+  {
+    "text": "Click here to verify your banking login details and prevent account closure.",
+    "label": "scam",
+    "categoryId": "phishing",
+    "category": "Phishing"
+  },
+  {
+    "text": "Security alert: login at bit.ly/bankverify and confirm your password.",
+    "label": "scam",
+    "categoryId": "phishing",
+    "category": "Phishing"
+  },
+  {
+    "text": "Congratulations, you have won a lottery prize. Pay processing fee to claim.",
+    "label": "scam",
+    "categoryId": "prize_lottery",
+    "category": "Prize / Lottery Scam"
+  },
+  {
+    "text": "You won cashback of 5000 rupees. Send 99 rupees registration fee now.",
+    "label": "scam",
+    "categoryId": "prize_lottery",
+    "category": "Prize / Lottery Scam"
+  },
+  {
+    "text": "Lucky draw winner. Claim your prize by paying a small service charge.",
+    "label": "scam",
+    "categoryId": "prize_lottery",
+    "category": "Prize / Lottery Scam"
+  },
+  {
+    "text": "Your parcel is held by customs. Pay duty charges through this link.",
+    "label": "scam",
+    "categoryId": "courier_scam",
+    "category": "Courier / Delivery Scam"
+  },
+  {
+    "text": "Delivery failed. Pay courier fee immediately to release your package.",
+    "label": "scam",
+    "categoryId": "courier_scam",
+    "category": "Courier / Delivery Scam"
+  },
+  {
+    "text": "Fake customer care refund support. Call this helpline and share OTP.",
+    "label": "scam",
+    "categoryId": "fake_customer_care",
+    "category": "Fake Customer Care"
+  },
+  {
+    "text": "Contact our toll free customer care number for wallet refund and provide UPI PIN.",
+    "label": "scam",
+    "categoryId": "fake_customer_care",
+    "category": "Fake Customer Care"
+  },
+  {
+    "text": "Guaranteed returns of 30 percent every month. Join trading group and deposit money.",
+    "label": "scam",
+    "categoryId": "investment_scam",
+    "category": "Investment / Financial Scam"
+  },
+  {
+    "text": "Double your money in 7 days. Transfer investment amount today only.",
+    "label": "scam",
+    "categoryId": "investment_scam",
+    "category": "Investment / Financial Scam"
+  },
+  {
+    "text": "Work from home and earn 5000 per day. Pay registration fee to start.",
+    "label": "scam",
+    "categoryId": "job_scam",
+    "category": "Job Scam"
+  },
+  {
+    "text": "No interview required. Send training fee for high salary online job.",
+    "label": "scam",
+    "categoryId": "job_scam",
+    "category": "Job Scam"
+  },
+  {
+    "text": "Instant loan approved. Pay processing fee before disbursal.",
+    "label": "scam",
+    "categoryId": "loan_scam",
+    "category": "Loan Scam"
+  },
+  {
+    "text": "Pre approved loan available now. Deposit file charge to receive amount.",
+    "label": "scam",
+    "categoryId": "loan_scam",
+    "category": "Loan Scam"
+  },
+  {
+    "text": "Approve this UPI collect request to receive payment from buyer.",
+    "label": "scam",
+    "categoryId": "payment_scam",
+    "category": "Payment / UPI Scam"
+  },
+  {
+    "text": "Send money first to unlock your refund transaction.",
+    "label": "scam",
+    "categoryId": "payment_scam",
+    "category": "Payment / UPI Scam"
+  },
+  {
+    "text": "Never share your OTP or password with anyone, including bank staff.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Reminder from bank: our staff will never ask for your PIN or OTP.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Your order has been delivered successfully. Thank you for shopping with us.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Payment of 1200 rupees received from Ramesh on UPI.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Electricity bill payment reminder. Please pay from the official app before due date.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Your bank statement for this month is ready in the official mobile app.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Your courier is out for delivery today. No payment is required.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Your refund has been processed to the original payment method.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Team meeting at 5 pm. Please join the official video call link.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Security tip: do not click unknown links and always verify from official channels.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Aap apna OTP kisi ko mat batana. Bank kabhi OTP nahi mangta.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Your ticket booking is confirmed. PNR details are available in the app.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Salary credited to your account. Check your bank app for details.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  },
+  {
+    "text": "Your password was changed successfully. If this was not you, open the official app.",
+    "label": "safe",
+    "categoryId": "none",
+    "category": "No specific category"
+  }
+]

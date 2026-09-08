@@ -1,0 +1,25 @@
+{
+  "name": "bharatshield-ai-backend",
+  "version": "1.0.0",
+  "description": "BharatShield AI — secure backend/API for message, link, and screenshot risk analysis (prototype).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test ./src/tests/api.test.js",
+    "train:ml": "node ./src/logic/train.js",
+    "evaluate:ml": "node ./src/logic/evaluate.js",
+    "test:logic": "node --test ./src/logic/test/logic.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
