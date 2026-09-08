@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Screenshot — BharatShield AI</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <div class="page-head">
+    <div class="container">
+      <span class="eyebrow">Screenshot Analyzer</span>
+      <h1>Upload a screenshot of the message</h1>
+      <p style="max-width:58ch;margin:0 auto">We read the visible text from your image (in your browser) and run it through the same analysis as Message Check.</p>
+    </div>
+  </div>
+
+  <section class="section-tight">
+    <div class="container analyzer-shell">
+      <div class="card">
+        <div class="upload-box" id="upload-box" tabindex="0" role="button" aria-label="Upload a screenshot">
+          <div class="upload-icon">⬆</div>
+          <p style="margin-bottom:4px"><strong>Click to upload</strong> or drag and drop</p>
+          <p class="text-muted" style="font-size:0.82rem;margin:0">PNG or JPG, up to 8 MB</p>
+          <input type="file" id="file-input" accept="image/png, image/jpeg" hidden>
+        </div>
+
+        <div id="preview-slot"></div>
+        <div id="error-slot"></div>
+
+        <div id="ocr-panel" hidden>
+          <label for="ocr-text" style="display:block;font-weight:600;margin:18px 0 8px">Extracted text <span class="text-muted" style="font-weight:400">(you can correct it before analyzing)</span></label>
+          <textarea id="ocr-text" class="ocr-textbox"></textarea>
+          <div id="ocr-confidence-note" class="text-muted" style="font-size:0.82rem;margin-top:6px"></div>
+        </div>
+
+        <div class="form-actions">
+          <button type="button" class="btn btn-primary" id="analyze-btn" disabled>Analyze Screenshot</button>
+          <button type="button" class="btn btn-ghost" id="clear-btn">Clear</button>
+        </div>
+      </div>
+
+      <div class="loading-panel" id="loading-panel" hidden>
+        <div class="loading-ring"></div>
+        <div class="loading-stage" id="loading-stage">Reading text from image (OCR)…</div>
+      </div>
+
+      <div class="disclaimer-bar mt-lg">
+        <span class="icon">ⓘ</span>
+        <span>Your screenshot is processed in your browser using on-device OCR. It is not uploaded to any server, and is discarded once you leave this page.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<!-- Tesseract.js: in-browser OCR engine (no server upload) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tesseract.js/5.0.4/tesseract.min.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/risk-engine.js"></script>
+<script src="js/mock-ai.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/screenshot.js"></script>
+</body>
+</html>

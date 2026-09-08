@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BharatShield AI — Detect. Understand. Protect.</title>
+<meta name="description" content="AI-assisted digital safety platform that helps you understand suspicious messages, links and screenshots before you act.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">AI-assisted digital safety</span>
+        <h1>Not sure if that message is real? <span style="color:var(--primary)">Find out before you act.</span></h1>
+        <p class="lede">BharatShield AI checks suspicious SMS, WhatsApp messages, links and screenshots — and explains exactly why something looks risky and what to do next, before you click, share an OTP, or send money.</p>
+        <div class="hero-ctas">
+          <a href="message.html" class="btn btn-primary">Check a Message</a>
+          <a href="link.html" class="btn btn-secondary">Check a Link</a>
+        </div>
+      </div>
+
+      <div class="scan-panel" aria-hidden="true">
+        <div class="scan-bubble">
+          <div class="scan-bar"></div>
+          <div class="msg-line"></div>
+          <div class="msg-line"></div>
+          <div class="msg-line"></div>
+        </div>
+        <div class="scan-tags">
+          <span class="signal-tag risk-high">URGENCY <span class="weight">+12</span></span>
+          <span class="signal-tag risk-high">OTP_REQUEST <span class="weight">+22</span></span>
+          <span class="signal-tag risk-high">SUSPICIOUS_LINK <span class="weight">+14</span></span>
+        </div>
+        <div class="scan-verdict">
+          <div>
+            <div style="font-weight:600">HIGH RISK</div>
+            <div class="text-muted" style="font-size:0.82rem">Possible OTP / Credential Theft</div>
+          </div>
+          <div class="score">86/100</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <h2 class="center">Three ways to check something suspicious</h2>
+      <p class="center" style="max-width:52ch;margin:0 auto 32px">Pick whichever matches what you received.</p>
+      <div class="analyzer-cards">
+        <a href="message.html" class="analyzer-card">
+          <span class="icon">✉</span>
+          <h3>Check Message</h3>
+          <p>Paste an SMS, WhatsApp text, or email and see a full risk breakdown.</p>
+          <span class="go">Analyze a message →</span>
+        </a>
+        <a href="link.html" class="analyzer-card">
+          <span class="icon">🔗</span>
+          <h3>Check Link</h3>
+          <p>Paste a suspicious URL. We inspect its structure — we never visit it.</p>
+          <span class="go">Analyze a link →</span>
+        </a>
+        <a href="screenshot.html" class="analyzer-card">
+          <span class="icon">🖼</span>
+          <h3>Check Screenshot</h3>
+          <p>Upload a screenshot. We read the visible text and analyze it for you.</p>
+          <span class="go">Analyze a screenshot →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2 class="center">How BharatShield works</h2>
+      <div class="steps">
+        <div class="step-card">
+          <span class="step-index">01 · SUBMIT</span>
+          <h3>Share what you received</h3>
+          <p>Paste text, a link, or upload a screenshot. Nothing is sent anywhere except for on-device analysis.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">02 · ANALYZE</span>
+          <h3>Signals are checked</h3>
+          <p>We scan for known scam patterns — urgency, OTP requests, impersonation, suspicious links, and more.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">03 · UNDERSTAND</span>
+          <h3>See risk + the "why"</h3>
+          <p>You get a risk level and score, plus a plain-language explanation of every signal detected.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-index">04 · PROTECT</span>
+          <h3>Know your next step</h3>
+          <p>Clear guidance on what to do — and what never to do — based on the specific threat detected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="card">
+        <h2>Built to be honest about what it can and can't do</h2>
+        <div class="grid-3 mt-lg">
+          <div>
+            <h4>AI-assisted, not a verdict</h4>
+            <p>BharatShield highlights risk indicators. It never claims certainty — always verify important messages through official channels.</p>
+          </div>
+          <div>
+            <h4>Privacy-conscious</h4>
+            <p>Analysis runs in your browser. We don't store your messages, OTPs, PINs, or passwords.</p>
+          </div>
+          <div>
+            <h4>Made for Indian scam patterns</h4>
+            <p>Trained rules cover KYC scams, UPI fraud, courier scams, fake customer care, and more — the patterns Indian users actually see.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container center">
+      <h2>Want general safety habits instead?</h2>
+      <p>Visit the Safety Center for everyday tips on spotting scams, even without running a check.</p>
+      <a href="safety.html" class="btn btn-secondary">Open Safety Center</a>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/utilities.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/risk-engine.js"></script>
+<script src="js/mock-ai.js"></script>
+<script src="js/navigation.js"></script>
+</body>
+</html>

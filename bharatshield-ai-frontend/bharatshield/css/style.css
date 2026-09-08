@@ -1,0 +1,148 @@
+/* =========================================================================
+   BharatShield AI — Design Tokens & Base Styles
+   Palette: deep security-navy surface + a single teal "shield" accent.
+   Risk colors are semantic and always paired with icon + text label,
+   never color alone (accessibility requirement).
+   Type: Space Grotesk (display) + Inter (body) + JetBrains Mono (data/signals)
+   Signature motif: monospace "signal readout" tags — [SIGNAL +weight] —
+   used on the hero and result page to make the RISK→WHY→EVIDENCE→ACTION
+   philosophy visually literal.
+   ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Surfaces */
+  --bg: #0A0F1C;
+  --bg-elevated: #0E1526;
+  --surface: #121A2E;
+  --surface-alt: #182238;
+  --border: #253150;
+  --border-soft: #1B2740;
+
+  /* Text */
+  --text: #E9EDF7;
+  --text-muted: #98A4C2;
+  --text-faint: #64709660;
+
+  /* Brand accent */
+  --primary: #2FD6C4;
+  --primary-dim: #1FA997;
+  --primary-tint: #2FD6C41a;
+
+  /* Risk semantics */
+  --risk-low: #34D399;
+  --risk-low-bg: #34D39918;
+  --risk-medium: #F5B84C;
+  --risk-medium-bg: #F5B84C18;
+  --risk-high: #FB8A4C;
+  --risk-high-bg: #FB8A4C1c;
+  --risk-critical: #F0475C;
+  --risk-critical-bg: #F0475C20;
+
+  /* Type */
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Consolas', monospace;
+
+  /* Scale */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --container: 1120px;
+  --shadow-soft: 0 10px 40px -18px rgba(0,0,0,0.6);
+  --shadow-glow: 0 0 0 1px var(--border), 0 20px 60px -30px rgba(47,214,196,0.25);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  background-image:
+    radial-gradient(circle at 15% 0%, #14213a 0%, transparent 45%),
+    radial-gradient(circle at 100% 20%, #10233066 0%, transparent 40%);
+  background-attachment: fixed;
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; line-height: 1.2; margin: 0 0 0.5em; letter-spacing: -0.01em; }
+h1 { font-size: clamp(2rem, 4vw, 3rem); }
+h2 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
+h3 { font-size: 1.2rem; }
+p { margin: 0 0 1em; color: var(--text-muted); }
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+section { padding: 64px 0; }
+.section-tight { padding: 32px 0; }
+
+/* ---------- Header / Nav ---------- */
+#site-header { position: sticky; top: 0; z-index: 50; background: rgba(10,15,28,0.85); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-soft); }
+.nav-bar { max-width: var(--container); margin: 0 auto; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; color: var(--text); }
+.brand:hover { text-decoration: none; }
+.brand-mark { color: var(--primary); font-size: 1.3rem; }
+.brand-ai { color: var(--primary); margin-left: 3px; }
+.nav-links { display: flex; align-items: center; gap: 28px; }
+.nav-links a { color: var(--text-muted); font-size: 0.92rem; font-weight: 500; }
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+.nav-links a.active { color: var(--primary); }
+.nav-toggle { display: none; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: 6px; }
+.nav-toggle span { width: 22px; height: 2px; background: var(--text); display: block; transition: transform 0.2s ease, opacity 0.2s ease; }
+
+/* ---------- Buttons ---------- */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-family: var(--font-body); font-weight: 600; font-size: 0.95rem; padding: 13px 24px; border-radius: var(--radius-sm); border: 1px solid transparent; cursor: pointer; transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease; }
+.btn:active { transform: scale(0.98); }
+.btn-primary { background: var(--primary); color: #06251F; }
+.btn-primary:hover { background: #4BE3D2; text-decoration: none; }
+.btn-secondary { background: var(--surface-alt); color: var(--text); border-color: var(--border); }
+.btn-secondary:hover { border-color: var(--primary); text-decoration: none; }
+.btn-ghost { background: transparent; color: var(--text-muted); border-color: var(--border); }
+.btn-ghost:hover { color: var(--text); text-decoration: none; }
+.btn-block { width: 100%; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* ---------- Cards ---------- */
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; box-shadow: var(--shadow-soft); }
+
+/* ---------- Signal readout tag (signature element) ---------- */
+.signal-tag { font-family: var(--font-mono); font-size: 0.78rem; background: var(--surface-alt); border: 1px solid var(--border); color: var(--text-muted); padding: 4px 10px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
+.signal-tag .weight { color: var(--primary); }
+.signal-tag.risk-high, .signal-tag.risk-critical { border-color: var(--risk-high); color: var(--risk-high); }
+
+/* ---------- Footer ---------- */
+#site-footer { border-top: 1px solid var(--border-soft); margin-top: 80px; padding: 48px 0 32px; }
+.footer-inner { max-width: var(--container); margin: 0 auto; padding: 0 24px; display: grid; grid-template-columns: 1.2fr 1fr 1.4fr; gap: 32px; }
+.footer-brand { font-family: var(--font-display); font-weight: 700; color: var(--text); }
+.footer-brand p { margin-top: 6px; font-family: var(--font-body); font-weight: 400; color: var(--text-muted); font-size: 0.88rem; }
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-links a { color: var(--text-muted); font-size: 0.9rem; }
+.footer-note p { font-size: 0.8rem; color: var(--text-faint); margin: 0 0 6px; }
+.footer-note strong { color: var(--text-muted); }
+
+/* ---------- Disclaimer banner ---------- */
+.disclaimer-bar { background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 14px 18px; font-size: 0.85rem; color: var(--text-muted); display: flex; gap: 10px; align-items: flex-start; }
+.disclaimer-bar .icon { color: var(--primary); }
+
+/* ---------- Badges / labels ---------- */
+.badge { display: inline-flex; align-items: center; gap: 6px; font-size: 0.75rem; font-weight: 600; padding: 4px 10px; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; }
+.badge-outline { border: 1px solid var(--border); color: var(--text-muted); }
+
+/* ---------- Utility ---------- */
+.text-muted { color: var(--text-muted); }
+.eyebrow { font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary); margin-bottom: 10px; display: block; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.mt-lg { margin-top: 48px; }
+.center { text-align: center; }

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Message — BharatShield AI</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<div id="site-header"></div>
+
+<main>
+  <div class="page-head">
+    <div class="container">
+      <span class="eyebrow">Message Analyzer</span>
+      <h1>Paste the suspicious message</h1>
+      <p style="max-width:56ch;margin:0 auto">SMS, WhatsApp text, or email — paste it exactly as you received it.</p>
+    </div>
+  </div>
+
+  <section class="section-tight">
+    <div class="container analyzer-shell">
+      <form class="analyzer-form card" id="message-form">
+        <label for="message-input">Message text</label>
+        <textarea id="message-input" maxlength="5000" placeholder="e.g. Your bank account will be blocked today. Share the OTP sent to your number to keep it active." aria-describedby="char-count"></textarea>
+        <div class="form-meta">
+          <span id="char-count">0 / 5000</span>
+          <span class="text-muted">Nothing is sent to a server — this runs in your browser.</span>
+        </div>
+
+        <div class="example-row" aria-label="Try an example">
+          <button type="button" class="example-chip" data-example="kyc">Fake KYC example</button>
+          <button type="button" class="example-chip" data-example="prize">Prize scam example</button>
+          <button type="button" class="example-chip" data-example="courier">Courier scam example</button>
+          <button type="button" class="example-chip" data-example="otp">OTP request example</button>
+          <button type="button" class="example-chip" data-example="legit">Legitimate message example</button>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="analyze-btn">Analyze Message</button>
+          <button type="button" class="btn btn-ghost" id="clear-btn">Clear</button>
+        </div>
+
+        <div id="error-slot"></div>
+      </form>
+
+      <div class="loading-panel" id="loading-panel" hidden>
+        <div class="loading-ring"></div>
+        <div class="loading-stage" id="loading-stage">Reading submitted content…</div>
+      </div>
+
+      <div class="disclaimer-bar mt-lg">
+        <span class="icon">ⓘ</span>
+        <span>BharatShield provides an AI-assisted risk assessment based on known scam patterns. It is not a definitive determination of fraud. Always verify important information through official channels.</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/utilities.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/risk-engine.js"></script>
+<script src="js/mock-ai.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/message.js"></script>
+</body>
+</html>

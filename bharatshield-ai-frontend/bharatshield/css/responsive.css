@@ -1,0 +1,44 @@
+/* =========================================================================
+   BharatShield AI — Responsive
+   ========================================================================= */
+
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .analyzer-cards { grid-template-columns: repeat(3, 1fr); }
+  .footer-inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 820px) {
+  .analyzer-cards { grid-template-columns: repeat(2, 1fr); }
+  .tip-grid { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 720px) {
+  .nav-toggle { display: flex; }
+  .nav-links {
+    position: absolute; top: 100%; left: 0; right: 0; background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border-soft); flex-direction: column; align-items: flex-start;
+    padding: 12px 24px 20px; gap: 4px; display: none;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { padding: 10px 0; width: 100%; }
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; }
+  .steps { grid-template-columns: 1fr; }
+  .analyzer-cards { grid-template-columns: 1fr; }
+  section { padding: 44px 0; }
+  .hero { padding: 48px 0 36px; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 16px; }
+  h1 { font-size: 1.8rem; }
+  .risk-hero { padding: 26px 18px; }
+  .risk-hero .risk-level-label { font-size: 1.4rem; }
+  .form-actions { flex-direction: column; }
+  .form-actions .btn { width: 100%; }
+  .result-actions { flex-direction: column; }
+  .result-actions .btn { width: 100%; }
+}
