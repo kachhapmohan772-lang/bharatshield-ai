@@ -16,7 +16,7 @@
 const MockAI = (() => {
   // Point this at your running backend. Leave as-is for local dev
   // (`npm start` in bharatshield-backend runs on port 4000 by default).
-  const API_BASE = window.BHARATSHIELD_API_BASE || "http://localhost:4000/api";
+  const API_BASE = window.BHARATSHIELD_API_BASE || "https://bharatshield-ai.onrender.com/api";
   const REQUEST_TIMEOUT_MS = 4000;
   const ARTIFICIAL_DELAY_MS = 300; // only used for the local fallback path
 
