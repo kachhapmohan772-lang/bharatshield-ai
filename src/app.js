@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const path = require('path');
 const { applySecurity } = require('./middleware/security');
 const requestContext = require('./middleware/requestContext');
 const { notFoundHandler, errorHandler } = require('./middleware/errorHandler');
@@ -19,6 +20,8 @@ function createApp() {
 
   app.use('/api/health', healthRoutes);
   app.use('/api/analyze', analyzeRoutes);
+  
+  app.use(express.static(path.join(__dirname, '../bharatshield-ai-frontend/bharatshield')));
 
   app.use(notFoundHandler);
   app.use(errorHandler);
