@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bharatshield-ai.onrender.com/sitemap.xml
